@@ -1,0 +1,42 @@
+<script type="text/javascript">
+	RED.nodes.registerType('flick-electric-price',{
+	  category: 'input',
+	  color: '#e7e7ae',
+	  defaults: {
+			name: {value:""}
+	  },
+		credentials: {
+			username: {type:"text", required: true},
+			password: {type:"password", required: true}
+		},
+	  inputs:1,
+	  outputs:1,
+	  icon: "flick-electric-price.png",
+	  label: function() {
+			return this.name||"flick-electric-price";
+	  }
+	});
+</script>
+
+<script type="text/x-red" data-template-name="flick-electric-price">
+	<div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i> Name</label>
+		<input type="text" id="node-input-name" placeholder="Name">
+	</div>
+	<div class="form-row">
+		<label for="node-input-username"><i class="fa fa-user"></i> Email address</label>
+		<input type="text" id="node-input-username">
+	</div>
+	<div class="form-row">
+		<label for="node-input-password"><i class="fa fa-lock"></i> Password</label>
+		<input type="password" id="node-input-password">
+	</div>
+</script>
+
+<script type="text/x-red" data-help-name="flick-electric-price">
+	<p>Connects to Flick and outputs the current market price.</p>
+	<ul>
+		<li><b>Username</b>: This is your Flick Electric email address that you use to log in.</li>
+		<li><b>Password</b>: This is your Flick Electric password.</li>
+	</ul>
+</script>

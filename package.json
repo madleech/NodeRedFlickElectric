@@ -1,0 +1,27 @@
+{
+  "name": "node-red-contrib-flick-electric-price",
+  "version": "0.0.1",
+  "description": "Emits current Flick market price",
+  "keywords": [
+    "flick",
+    "flick electric"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madleech/NodeRedFlickElectric.git"
+  },
+  "author": "Michael Adams",
+  "license": "ISC",
+  "dependencies": {
+    "flick-electric-api": "0.0.1",
+    "superagent": "^2.1.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0"
+  },
+  "node-red": {
+    "nodes": {
+      "flick-electric-price": "flick-electric-price/flick-electric-price.js"
+    }
+  }
+}
